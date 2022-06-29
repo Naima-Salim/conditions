@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //assigning to properties
+        let object={};
+        object.name= "Shirleen";
+        object.age= 20;
+
+        console.log(object);
+
+        let x = object["name"];
+        let agex=object.age;
+        console.log(x);
+
+        //destructuring properties
+        const { name, age}=object;
+        console.log("destruction properties" ,name, age);
+
+        //
+        const students = ["Tessa", "Naima", "Brenda", "Rosemary", "Shirleen"]
+        const [one, two, four, three, five] = students
+        console.log("destructuring students: ", one, two, three, four, five);
+
+
+    </script>
+</body>
+</html>
